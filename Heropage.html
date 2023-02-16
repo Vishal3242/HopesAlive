@@ -1,0 +1,195 @@
+<html>
+<head>
+    <title>
+        document
+    </title>
+<link rel="stylesheet" href="style.css">
+<style>
+    h6{
+        text-align: center;
+        font-size: larger;
+    }
+    h2{
+        text-decoration: solid;
+        font-size: 200%;
+        
+    }
+    img{
+        width: 4%;
+        padding-left: 5px;
+        margin-left: 17px;
+    }
+    /* .bg{
+        width: 900%;
+
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        border-radius: 10%;
+    } */
+    .bg img{ 
+        border-radius: 10%;
+        position: absolute;
+        left: 3%;
+        top: 35%;
+        width: 45%;
+    }
+
+
+    .hope{
+
+        color: rgb(154, 0, 21);
+        position: absolute;
+        left: 6%;
+   
+    }
+ ul{
+    margin-left: 5%;
+ }
+ 
+</style>
+</head>
+<body>
+   
+
+    <div class="navbar">
+        <img src="logo.jpg">
+        <div class="hope"><h2>HOPESALIVE....</h2></div>
+    
+        
+        <div class="links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+      </div>
+      
+    </div>
+    <div class="imgDiv">
+    </div>
+    <div  class="bg">
+        <img src="bg.jpg">
+      </div>
+
+    <div class="para">
+        <ul>
+            <br>
+            <h3><u>ABOUT</u></h3>
+            <br>
+                  <li><a href="#"> Know more about UDID</a> </li>
+                  <li><a href="#"> Schemes for Persons with Disabilities</a> </li>
+                  <li><a href="#"> About Department of Empowerment of Persons with Disabilities</a> </li>
+                  <li><a href="#"> Medical Camps / Hospitals</a> </li>
+                  <li><a href="#"> District Welfare Office</a> </li>
+        </ul>
+                  
+
+                
+        <br>
+        <hr>
+        <h6>© Copyright Team ASPIRE 2023. All Rights Reserved</h6>
+        </div>
+        
+
+
+   
+    <div>
+        <button class="btn-login" onclick="showModal()">USER</button>
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="loginform">
+            <span onclick="closeModal()">&times;</span>
+            <form action="">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text"placeholder="Unique ID code" />
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" />
+                </div>
+                <button>Login</button>
+                <a href="a11.html" class="buttona11">login</a>
+                <a href="a1.html" class="buttona1">Sign Up</a>
+            </form>
+        </div>
+
+        <button class="btn-login1" onclick="showModal1()">NGO</button>
+        <div class="overlay1" onclick="closeModal1()"></div>
+        <div class="loginform1">
+            <span onclick="closeModal1()">&times;</span>
+            <form action="">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text" placeholder="Registration No." />
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password"placeholder="*password" />
+                </div>
+                <a href="a22.html" class="buttona21">login</a>
+                <a href="a2.html" class="buttona2">Sign Up</a>
+            </form>
+        </div>
+        <button class="btn-login2" onclick="showModal2()">PRIVATE</button>
+        <div class="overlay2" onclick="closeModal2()"></div>
+        <div class="loginform2">
+            <span onclick="closeModal2()">&times;</span>
+            <form action="">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text" placeholder="CIN No." />
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" placeholder="*password" />
+                </div>
+                <a href="a33.html" class="buttona31">login</a>
+                <a href="a3.html" class="buttona3">Sign Up</a>
+            </form>
+        </div>
+    
+    
+
+</body>
+<script>
+    function showModal() {
+        document.querySelector('.overlay').classList.add('showoverlay')
+        document.querySelector('.loginform').classList.add('showloginform')
+
+    }
+    function closeModal() {
+        document.querySelector('.overlay').classList.remove('showoverlay')
+        document.querySelector('.loginform').classList.remove('showloginform')
+
+    }
+
+    function showModal1() {
+        document.querySelector('.overlay1').classList.add('showoverlay1')
+        document.querySelector('.loginform1').classList.add('showloginform1')
+
+    }
+    function closeModal1() {
+        document.querySelector('.overlay1').classList.remove('showoverlay1')
+        document.querySelector('.loginform1').classList.remove('showloginform1')
+
+    }
+    function showModal2() {
+        document.querySelector('.overlay2').classList.add('showoverlay2')
+        document.querySelector('.loginform2').classList.add('showloginform2')
+
+    }
+    function closeModal2() {
+        document.querySelector('.overlay2').classList.remove('showoverlay2')
+        document.querySelector('.loginform2').classList.remove('showloginform2')
+
+    }
+</script>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>

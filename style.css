@@ -1,0 +1,446 @@
+*{
+
+    margin:0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+body{
+    background: url(banner.jpg);
+    background-size:cover;  
+}
+body{
+
+    width:100%;
+
+}
+
+.navbar {
+
+    width:100%;
+
+    background-color: #b89846;
+
+    padding: 15px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: 0.3s;
+
+}
+
+
+
+.newnavbar {
+
+    background-color: #1eabb5;
+
+    /* position: fixed; */
+
+    padding: 12px 0;
+
+}
+
+.navbar h3{
+
+    font-size:1.3em;
+
+    font-family: Swis721 BT;
+
+    letter-spacing: 2.5px;
+
+    color:#644b4b;
+
+    margin-left: 25px;
+
+}
+
+.newnavbar h3 {
+
+    color:#4b819e;
+
+}
+
+
+
+.links {
+
+    transition: 0.3s;
+
+}
+
+.links ul{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0 25px;
+
+}
+
+.links li {
+
+    list-style: none;
+
+    padding: 0 20px;
+
+}
+
+.links li a{
+
+    text-decoration: none;
+
+    outline: none;
+
+    font-size: 1.25em;
+
+    color:#f9f906;
+
+    letter-spacing: 1.5px;
+
+    font-family: Futura Md BT;
+
+    padding:5px 15px;
+
+    transition: 0.3s;
+
+}
+
+.links li a:hover{
+
+    background-color: #333;
+
+}
+
+.newlinks li a{
+
+    color:#721b65;
+
+    transition: 0.3s;
+
+}
+
+.newlinks li a:hover {
+
+    background-color: #f5f7f9;
+
+}
+.imgDiv {
+
+    width:100%;
+
+    height: 85vh;
+
+    background: url('banner.jpg');
+
+    background-size: 100% 100%;
+
+    background-attachment: fixed;
+    opacity: 0.5;
+
+
+
+} 
+
+
+.para {
+
+    width:100%;
+
+    height: -40vh;
+
+    background-color: #f1f1f1;
+
+}
+
+.para p{
+
+    width:80%;
+
+    font-size: 1.25em;
+
+    color:#333;
+
+    text-align: justify;
+
+    padding: 30px 0;
+
+    margin:0 auto;
+
+    font-family: Swis721 BT;
+
+}
+
+
+.btn-login{
+    padding: 13px 15px;
+    cursor: pointer;
+    background-color: rgb(197, 145, 0);
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.btn-login1{
+    padding: 13px 35px;
+    cursor: pointer;
+    background-color: rgb(197, 145, 0);
+    color: white;
+    position: absolute;
+    left: 68%;
+    top: 80%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.btn-login2{
+    padding: 13px 25px;
+    cursor: pointer;
+    background-color: rgb(197, 145, 0);
+    color: white;
+    position: absolute;
+    left: 83%;
+    top: 80%;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay1{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay2{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.showoverlay1{
+    opacity: 1;
+    z-index: 1;
+}
+.showoverlay2{
+    opacity: 1;
+    z-index: 1;
+}
+.loginform{
+    width: 350px;
+    background-color: white;
+    padding:25px;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+    z-index: 5;
+
+}
+.loginform1{
+    width: 350px;
+    height: 217px;
+    background-color: white;
+    padding:25px;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+    z-index: 5;
+
+}
+.loginform2{
+    width: 350px;
+    height: 217px;
+    background-color: white;
+    padding:25px;
+    position: absolute;
+    transition: 2s;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+    z-index: 5;
+
+}
+.showloginform{
+    top: 50%;
+}
+.showloginform1{
+    top: 50%;
+}
+.showloginform2{
+    top: 50%;
+}
+.loginform input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+
+}
+.loginform1 input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+
+}
+.loginform2 input{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+
+}
+.loginform button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.loginform1 button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+.loginform2 button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+}
+.loginform span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    
+}
+.loginform1 span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    
+    
+}
+.loginform2 span{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    
+}
+.img{
+
+    position: fixed;
+    left: 0%;
+    top: 10%;
+    width: 354px;
+    height: 700px;
+    border-radius: 20px;
+    
+
+}
+.buttona1{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 68%;
+    text-decoration: none;
+}
+.buttona11{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 7%;
+    text-decoration: none;
+
+}
+.buttona2{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 68%;
+    text-decoration: none;
+
+}
+.buttona21{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 5%;
+    text-decoration: none;
+
+}
+.buttona3{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 68%;
+    text-decoration: none;
+    
+
+}
+.buttona31{
+    background-color: black;
+    color: white;
+    padding: 11px 18px;
+    position: absolute;
+    left: 6%;
+    text-decoration: none;
+}
+
+
